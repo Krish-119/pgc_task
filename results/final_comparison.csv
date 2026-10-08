@@ -1,0 +1,10 @@
+Method,Device,Data Size,CPU Threads,GPU Threads/Block,GPU Blocks,Timing Type,Execution Time (seconds),Execution Time (ms),Result Check
+Sequential CPU,CPU,10000000,1,,,CPU operation time,0.0055548,5.5548,3
+Sequential CPU,CPU,50000000,1,,,CPU operation time,0.027883,27.883,3
+Sequential CPU,CPU,100000000,1,,,CPU operation time,0.064338,64.338,3
+OpenMP CPU,CPU,10000000,16,,,CPU parallel operation time,0.0076805,7.6805,3
+OpenMP CPU,CPU,50000000,16,,,CPU parallel operation time,0.0314683,31.4683,3
+OpenMP CPU,CPU,100000000,16,,,CPU parallel operation time,0.0503049,50.3049,3
+CUDA GPU,NVIDIA RTX 3050,10000000,,256,39063,GPU kernel execution time,0.000919488,0.919488,3
+CUDA GPU,NVIDIA RTX 3050,50000000,,256,195313,GPU kernel execution time,0.00397248,3.97248,3
+CUDA GPU,NVIDIA RTX 3050,100000000,,256,390625,GPU kernel execution time,0.00769331,7.69331,3
